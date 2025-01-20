@@ -59,9 +59,9 @@ export default function Skill() {
             <motion.div
                 initial="hidden"
                 whileInView="visible"
-                variants={containerVariants} id="Skill" className="flex flex-col mx-10 md:mx-20 md:bg-gray-400 py-10 rounded-3xl md:bg-opacity-30">
+                variants={containerVariants} id="Skill" className="md:gap-y-5 flex flex-col mx-10 lg:mx-32 md:bg-gray-400 py-10 rounded-3xl md:bg-opacity-30">
                 <motion.h1 initial={{ opacity: 0, y: -50 }} whileInView={{ opacity: 1, y: 0, transition: { duration: 0.8, delay: 0.2 } }} className="text-center text-white font-bold text-3xl md:text-5xl">Skill</motion.h1>
-                <div className="grid md:grid-cols-2 space-y-10">
+                <div className="grid md:grid-cols-2 gap-y-5 items-center">
                     {skil.map((item, index) => <motion.div
                         key={index}
                         initial="hidden"

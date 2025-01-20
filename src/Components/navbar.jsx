@@ -10,7 +10,7 @@ export default function Navbar() {
         SetThem((prev) => !prev)
     }
     return (
-        <div className="px-10 md:fixed sticky top-0 w-screen md:px-32 py-5 shadow-sm z-96 md:flex justify-between items-center text-white text-xl font-semibold">
+        <div className="px-10 md:fixed sticky top-0 w-screen md:-px-20 lg:px-32 py-5 shadow-sm z-96 md:flex justify-between items-center text-white text-xl font-semibold">
             <h1>Portofolio</h1>
             <div className="drop-shadow-2xl space-x-10 hidden md:block">
                 <a className="hover:text-gray-300" href="#About">Home</a>

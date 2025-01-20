@@ -8,7 +8,7 @@ export default function Card_Project({ items }) {
             </div>
             <div className="flex flex-col text-sm gap-y-5 ">
                 <h1 className="font-semibold text-xl">{items.Title}</h1>
-                <h1>{items.Naration}</h1>
+                <h1 className="">{items.Naration}</h1>
             </div>
         </div>)
 }
