@@ -1,16 +1,17 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
+import { motion } from "framer-motion";
 
 export default function Navbar() {
     const html = document.querySelector('html')
-    console.log(html)
-    const [Theme, SetThem] = useState(false);
+    console.log(html.classList)
+    const [Theme, SetThem] = useState(true);
 
     function changeTheme() {
         Theme ? html.classList.remove('dark') : html.classList.add('dark')
         SetThem((prev) => !prev)
     }
     return (
-        <div className="px-10 md:fixed sticky top-0 w-screen md:-px-20 lg:px-32 py-5 shadow-sm z-96 md:flex justify-between items-center text-white text-xl font-semibold">
+        <motion.div initial={{ y:-200 }} animate={{ y:0,transition:{duration:0.5,delay:0.2} }} className="z-50 px-10 md:fixed sticky top-0 w-full md:-px-20 lg:px-32 py-5 shadow-sm z-96 md:flex justify-between items-center text-white text-xl font-semibold">
             <h1>Portofolio</h1>
             <div className="drop-shadow-2xl space-x-10 hidden md:block">
                 <a className="hover:text-gray-300" href="#About">Home</a>
@@ -20,6 +21,6 @@ export default function Navbar() {
                 <a className="hover:text-gray-300" href="#Contact">Contact</a>
             </div>
             
-        </div>
+        </motion.div>
     )
 }
