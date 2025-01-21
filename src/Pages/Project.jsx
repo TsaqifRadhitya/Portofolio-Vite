@@ -1,6 +1,7 @@
 import { faker } from "@faker-js/faker";
-import { easeIn, easeInOut, motion } from "framer-motion";
+import {motion } from "framer-motion";
 import Card_Project from "../Components/Card_Project";
+import Image from "../assets/Frame 1.png"
 
 
 export default function Project() {
@@ -8,7 +9,7 @@ export default function Project() {
         faker.seed(id * 5)
         return {
             Title: "MeowInn",
-            Image: "src/assets/Frame 1.png",
+            Image: Image,
             Naration: faker.lorem.paragraphs()
         }
     })
