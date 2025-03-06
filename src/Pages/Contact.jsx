@@ -12,7 +12,7 @@ export default function Contact() {
                 <textarea type="richtext" placeholder="Name" className="rounded-3xl min-h-32 p-5" />
                 <button className="btn btn-success rounded-full">Submit</button>
             </div>
-            <div className="flex flex-col bg-black px-20 rounded-2xl space-y-2 justify-center gap-y-5">
+            <div className="md:flex flex-col bg-black px-20 rounded-2xl space-y-2 justify-center gap-y-5 hidden">
                 <div className="flex items-center space-x-5 text-xl">
                     <IoLogoInstagram />
                     <a href="https://www.instagram.com/tsaqif_rr/" className="underline underline-offset-2" target="blank">Instagram</a>
